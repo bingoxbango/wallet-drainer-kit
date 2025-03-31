@@ -1,0 +1,14 @@
+<h2>Connected Wallets</h2>
+<ul id="wallets"></ul>
+<script>
+  fetch("http://localhost:5000/wallets")
+    .then(res => res.json())
+    .then(data => {
+      const list = document.getElementById("wallets");
+      data.wallets.forEach(wallet => {
+        const li = document.createElement("li");
+        li.innerText = `${wallet.address} - ${wallet.status}`;
+        list.appendChild(li);
+      });
+    });
+</script>
